@@ -1,0 +1,19 @@
+.project-section {
+    padding: 5% 0;
+    width: 90%;
+    margin: auto;
+}
+
+.project-section h2 {
+    margin-bottom: 40px;
+}
+
+.project-container {
+    flex-direction: column;
+}
+
+.project-card {
+    width: 75%;
+    height: 60vh;
+    margin: 10px 0;
+}

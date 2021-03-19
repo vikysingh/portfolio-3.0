@@ -1,3 +1,10 @@
+/*
+In typography goes the following:
+-type scale
+-font families and its relative properties
+-text properties
+*/
+
 /* Fixed styles */
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -6,6 +13,12 @@ body {
 h1, h2 {
     font-family: 'Source Code Pro', monospace;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* Fixed typescale */
 
 h1 {
     font-size: 4rem;
@@ -17,4 +30,9 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+/* Other type scale classes, starting from 1.5rem */
+.text-mega {
+    font-size: 1.5rem;
 }

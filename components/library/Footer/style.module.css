@@ -1,0 +1,14 @@
+.footer {
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+.footer div {
+    text-align: left;
+    width: 30%;
+}
+
+.column-label {
+    text-transform: uppercase;
+    opacity: 0.7;
+}

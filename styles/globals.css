@@ -1,6 +1,8 @@
 :root {
     --red: #EB5757;
     --white: #ffffff;
+    --blue: #082F63;
+    --black: #000000;
 }
 
 * {
@@ -16,11 +18,53 @@ body {
     text-align: center;
 }
 
-/* Colors */
+/* Text Colors */
 .red {
     color: var(--red);
 }
 
 .white {
     color: var(--white);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.black {
+    color: var(--black);
+}
+
+/* Background colors */
+.bg-white {
+    background-color: var(--white);
+}
+
+/* Layout styles */
+.flex {
+    display: flex;
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.start-center {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.start-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Common section styles */
+.pad-y {
+    padding: 5% initial;
+}
+
+.pad-t {
+    padding-top: 5%;
 }

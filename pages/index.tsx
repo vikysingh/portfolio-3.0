@@ -1,12 +1,13 @@
-import {HomeHero, ProjectSection,SkillSection,PromoSection} from "../components/pages/index"
+import {HomeHero} from "../components/pages/index"
+import {Footer,ProjectSection,PromoSection} from "../components/library/index"
 
 export default function Index() {
     return <>
         <HomeHero />
         <main>
             <ProjectSection />
-            <SkillSection />
             <PromoSection />
         </main>
+        <Footer />
     </>
 }
