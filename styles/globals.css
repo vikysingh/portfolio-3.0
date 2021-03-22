@@ -60,6 +60,10 @@ body {
     align-items: flex-start;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /* Common section styles */
 .pad-y {
     padding: 5% initial;

@@ -10,7 +10,8 @@
 
 .hero h1 {
     position: absolute;
-    left: 0;
+    left: 40%;
+    top: 15%;
 }
 
 .hero div {

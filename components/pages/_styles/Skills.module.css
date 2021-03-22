@@ -1,0 +1,11 @@
+.hero-paragraph {
+    width: 50%;
+    margin-top: 20px !important;
+    margin: auto;
+}
+
+.skill {
+    margin: 10px;
+    background-color: #eee;
+    padding: 5px 10px;
+}
