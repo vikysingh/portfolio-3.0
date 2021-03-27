@@ -26,9 +26,9 @@ export default function Footer() {
     return <footer className={`bg-white flex start-start pad-y ${styles.footer}`} >
         <div>
         <ColumnLabel text="social" />
-        <Column link="#" label="LinkedIn" />
-        <Column link="#" label="GitHub" />
-        <Column link="#" label="Instagram" />
+        <Column link="https://www.linkedin.com/in/singhviky/" label="LinkedIn" />
+        <Column link="https://www.github.com/vikysingh" label="GitHub" />
+        <Column link="https://www.instagram.com/web.sia" label="Instagram" />
         </div>
         <div>
             <ColumnLabel text="contact" />

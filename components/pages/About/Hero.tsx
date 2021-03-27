@@ -7,13 +7,13 @@ export default function Hero() {
         <img src={imgSrc} alt="Profile photo" />
         <h1>Who Am I?</h1>
         <div>
-            <p className="text-mega">
+            <p className="text-mega w-80">
                 I’m a  FrontEnd developer and web designer based in Italy. 
                 I started learning JavaScript back in 2019 and since then 
                 I have made a lot of progress.
             </p>
             <br/>
-            <p className="text-mega">
+            <p className="text-mega w-80">
                 Other than FrontEnd development, I’ve
                 also had experience working with WordPress.
             </p>

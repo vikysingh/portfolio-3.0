@@ -64,6 +64,10 @@ body {
     flex-wrap: wrap;
 }
 
+.w-80 {
+    width: 80%;
+}
+
 /* Common section styles */
 .pad-y {
     padding: 5% initial;
@@ -71,4 +75,12 @@ body {
 
 .pad-t {
     padding-top: 5%;
+}
+
+.mar-t {
+    margin-top: 5%;
+}
+
+.m-auto {
+    margin: auto;
 }
