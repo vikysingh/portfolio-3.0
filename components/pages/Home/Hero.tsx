@@ -1,8 +1,10 @@
 import styles from "../_styles/Home.module.css"
+import { Typography } from "antd"
+
+const { Title } = Typography
 
 export default function Hero() {
     return <header className={`${styles["HOME-hero"]} flex center-center`} >
-        <h1 className="red" >Web Designer ♡ FrontEnd Dev</h1>
-        <p className="white" >Hi, my name is Vikram. I’m a Web Designer and a FrontEnd Developer.</p>
+        <Title level={1} className="serif" >FrontEnd<br/> Developer &<br/> Designer</Title>
     </header>
 }

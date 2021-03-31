@@ -6,9 +6,10 @@ class Index extends Document {
       <Html>
         <Head lang="en">
             <title>Vikram Singh - FrontEnd developer and Web Designer</title>
-            <link rel="preconnect" href="https://fonts.gstatic.com" / >
-              <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&family=Source+Sans+Pro&display=swap"
-              rel="stylesheet" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans&display=swap"
+            rel="stylesheet" />
         </Head>
         <body>
           <Main />

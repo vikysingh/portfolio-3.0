@@ -2,3 +2,29 @@
     height: 100vh;
     flex-direction: column;
 }
+
+.main-content {
+    padding-left: 10%;
+}
+
+.project-card {
+    margin: 8% 0;
+}
+
+.project-card img {
+    width: 40%;
+    height: auto;
+}
+
+.project-card-sub, .project-card-heading {
+    margin-left: 27%;
+    position: absolute;
+}
+
+.project-card-heading {
+    margin-top: -20%;
+}
+
+.project-card-sub {
+    margin-top: -14%;
+}

@@ -1,0 +1,45 @@
+/*
+This file is used to customize the Antd's theme and variables.
+It's compiled to ./antd.css. Run the "yarn compile:less" command to compile it to css
+*/
+@import "node_modules/antd/dist/antd.less";
+
+//Custom colors
+@dark: #1F1F1F;
+@super-light: #F8F8F8;
+
+// -------- Colors -----------
+@primary-color: @dark;
+@info-color: #082F63;
+@success-color: #00EF7C;
+@error-color: #FD0F0F;
+@white: #fff;
+@black: @dark;
+
+// Base background color for most components
+@component-background: @dark;
+
+// Background color for `<body>`
+@body-background: @super-light;
+
+// Text colors
+@text-color: @dark;
+@text-color-secondary: fade(@dark, 45%);
+@text-color-inverse: @super-light;
+@heading-color: @dark;
+
+// Typography
+@font-size-base: 1.5rem;
+@font-size-sm: 1rem;
+@heading-1-size: ceil(@font-size-base * 6);
+@heading-2-size: ceil(@font-size-base * 4);
+@heading-3-size: ceil(@font-size-base * 3);
+@heading-4-size: ceil(@font-size-base * 2.66);
+@heading-5-size: ceil(@font-size-base * 1.5);
+@font-family: 'Work Sans', sans-serif;
+
+// Layout
+@layout-body-background: @super-light;
+@layout-header-background: @super-light;
+@layout-footer-background: @layout-body-background;
+@layout-sider-background: @layout-header-background;

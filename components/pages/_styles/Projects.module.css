@@ -1,0 +1,24 @@
+.projects-section {
+    padding-bottom: 5%;
+}
+
+.projects-section h3, .projects-section .ant-col-9 div {
+    margin: 0;
+}
+
+.projects-card {
+    margin: 40px 0;
+    width: 80%;
+}
+
+.projects-card:first-child {
+    margin-top: 0;
+}
+
+.projects-card a{
+    font-weight: bolder;
+}
+
+.projects-card div {
+    line-height: 25px;
+}

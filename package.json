@@ -5,15 +5,14 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "compile:less": "lessc ./styles/main.less ./styles/antd.css --js"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "antd": "^4.14.1",
     "next": "latest",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.5.2",
-    "react-dom": "^17.0.1",
-    "react-flexbox-grid": "^2.1.2"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",

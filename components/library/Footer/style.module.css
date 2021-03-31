@@ -1,14 +1,8 @@
 .footer {
-    flex-direction: row;
-    padding-left: 5%;
+    padding: 5% 0;
+    text-align: center;
 }
 
-.footer div {
-    text-align: left;
-    width: 30%;
-}
-
-.column-label {
-    text-transform: uppercase;
-    opacity: 0.7;
+.footer a {
+    margin: 0 10px;
 }

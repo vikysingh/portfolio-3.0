@@ -1,13 +1,14 @@
-import {HomeHero} from "../components/pages/index"
-import {Footer,ProjectSection,PromoSection} from "../components/library/index"
+/*"
+import {Footer,ProjectSection,PromoSection} from "../components/library/index"*/
+import { Layout } from "../components/library/index"
+import {HomeHero, HomeMainContent} from "../components/pages/index"
+
 
 export default function Index() {
     return <>
-        <HomeHero />
-        <main>
-            <ProjectSection />
-            <PromoSection />
-        </main>
-        <Footer />
+        <Layout>
+            <HomeHero />
+            <HomeMainContent />
+        </Layout>
     </>
 }

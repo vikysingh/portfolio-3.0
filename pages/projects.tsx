@@ -1,11 +1,8 @@
-import { Footer, PromoSection, ProjectSection } from "../components/library/index"
+import { Layout } from "../components/library/index"
+import { ProjectsContent } from "../components/pages/index"
 
 export default function Projects() {
-    return <>
-    <main className="pad-t" >
-        <ProjectSection/>
-        <PromoSection/>
-    </main>
-    <Footer />
-    </>
+    return <Layout>
+        <ProjectsContent />
+    </Layout>
 }

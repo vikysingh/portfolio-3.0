@@ -1,0 +1,39 @@
+.sider {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.sider1 {
+    left: 0;
+    padding-left: 10px;
+    padding-top: 100px;
+}
+
+.sider2 {
+    right: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.sider1, .navbar ul li {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+.content {
+    padding-top: 10%;
+    padding-left: 10%;
+}

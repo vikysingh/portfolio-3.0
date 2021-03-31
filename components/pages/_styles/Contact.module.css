@@ -1,0 +1,23 @@
+.input, .textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #A89F9F;
+}
+
+.input::placeholder, .textarea::placeholder, .input, .textarea {
+    color: #1F1F1F;
+}
+
+.input:nth-child(2), .textarea {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    height: auto;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.submit-btn, .submit-btn:hover {
+    color: #fff;
+}

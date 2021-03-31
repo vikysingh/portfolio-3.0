@@ -1,12 +1,11 @@
-import{AboutHero} from "../components/pages/index"
-import { Footer, PromoSection } from "../components/library/index"
+import{ AboutHero, AboutSkills } from "../components/pages/index"
+import { Layout } from "../components/library/index"
 
 export default function About() {
     return <>
-    <main>
+    <Layout>
         <AboutHero />
-    </main>
-    <PromoSection/>
-    <Footer/>
+        <AboutSkills/>
+    </Layout>
     </>
 }
