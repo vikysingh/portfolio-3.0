@@ -1,6 +1,12 @@
 {
   "name": "with-typescript",
   "version": "1.0.0",
+  "description": "My online portfolio",
+  "author": "Vikram Singh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikysingh/portfolio-3.0"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
