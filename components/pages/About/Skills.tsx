@@ -2,15 +2,13 @@ import { Row, Col, Typography, Tag } from "antd"
 import styles from "../_styles/About.module.css"
 
 const { Title, Paragraph } = Typography
-const skills: Array<string> = [
-    "HTML5", "CSS3", "JavaScript(ES6+)", "Bootstrap",
-    "Sass", "NPM", "ReactJS", "Ant Design", "Axios",
-    "Git", "Redux(React-Redux)", "GitHub", "VSCode",
-    "Figma", "Jest", "React Testing Library", "NextJS",
-    "TypeScript"
-]
 
-export default function Skills() {
+interface SkillsProps {
+    skills: Array<string>;
+    description: string;
+}
+
+export default function Skills({ skills, description }: SkillsProps) {
     return <>
     <Row className={styles["skills-first-row"]}>
         <Col span={20}>
@@ -20,10 +18,7 @@ export default function Skills() {
     <Row>
         <Col span={10}>
             <Paragraph>
-                I mainly work with JavaScript and its relative
-                frameworks and libraries.
-                However, in the past I’ve had the opportunity
-                to build websites with WordPress’ plugin, Elementor.
+                {description}
             </Paragraph>
         </Col>
         <Col span={10}>

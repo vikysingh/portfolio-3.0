@@ -1,0 +1,17 @@
+{
+    "about": {
+        "description": {
+            "first": "I’m a self-taught FrontEnd developer based in Italy. I love working with JavaScript and building beautiful UIs and websites.",
+            "second": "I’ve spent the last two years learning FrontEnd development and its very philosophy – from simple “Hello world” programs to designing complete web apps’ architecture.",
+            "third": "A creative thinker and a problem solver, I’m comfortable working with modern technologies such as TypeScript, NextJS or Sass."
+        },
+        "imgSrc": ""
+    },
+    "skills": {
+        "description": "I mainly work with JavaScript and its relative frameworks and libraries. However, in the past I’ve had the opportunity to build websites with WordPress’ plugin, Elementor.",
+        "skills": [ "HTML5", "CSS3", "JavaScript(ES6+)", "Bootstrap", "Sass", "NPM", "ReactJS", 
+            "Ant Design", "Axios", "Git", "Redux(React-Redux)", "GitHub", "VSCode", "Figma",
+            "Jest", "React Testing Library", "NextJS", "TypeScript"
+        ]
+    }
+}

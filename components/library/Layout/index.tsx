@@ -1,5 +1,4 @@
 import { Typography, Layout } from "antd"
-import { ReactChildren } from "react"
 import styles from "./style.module.css"
 import { Footer, PromoSection } from "../index"
 
@@ -7,10 +6,11 @@ const { Paragraph, Link } = Typography
 const { Sider, Content } = Layout
 
 interface HOCLayoutProps {
-    children: ReactChildren | JSX.Element;
+    children: any;
+    onContact?: Boolean;
 }
 
-export default function HOCLayout({ children }: HOCLayoutProps) {
+export default function HOCLayout({ children, onContact }: HOCLayoutProps) {
     return <Layout className={styles.layout} >
         <Sider className={`${styles.sider} ${styles.sider1}`} width={50}>
             <Paragraph>scroll down</Paragraph>
@@ -20,7 +20,9 @@ export default function HOCLayout({ children }: HOCLayoutProps) {
             <main className={styles.content}>
                 {children}
             </main>
-            <PromoSection />
+            {
+                !onContact && <PromoSection />
+            }
             <Footer />
         </Content>
 

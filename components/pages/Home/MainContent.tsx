@@ -7,21 +7,24 @@ const imgSrc: string = "https://images.unsplash.com/photo-1598094670018-abf66953
 interface ProjectCardProps {
     src: string;
     title: string;
-    subHeading: string;
 }
 
-function ProjectCard({src, title, subHeading}: ProjectCardProps) {
+interface MainContentProps {
+    projects: Array<Object>;
+}
+
+function ProjectCard({src, title}: ProjectCardProps) {
     return <div className={styles["project-card"]} >
         <img src={src} alt="" />
         <Title className={`serif ${styles["project-card-heading"]}`} level={4}>{title}</Title>
-        <Paragraph className={styles["project-card-sub"]}>{subHeading}</Paragraph>
+        {/* <Paragraph className={styles["project-card-sub"]}>{subHeading}</Paragraph> */}
     </div>
 }
 
-export default function MainContent() {
+export default function MainContent({ projects }: MainContentProps) {
     return <section className={styles["main-content"]} >
-        <ProjectCard src={imgSrc} title="Project title" subHeading="Design & FrontEnd" />
-        <ProjectCard src={imgSrc} title="Project title" subHeading="Design & FrontEnd" />
-        <ProjectCard src={imgSrc} title="Project title" subHeading="Design & FrontEnd" />
+        {
+            projects.map(project => <ProjectCard key={project.title} src={imgSrc} title={project.title}  />)
+        }
     </section>
 }

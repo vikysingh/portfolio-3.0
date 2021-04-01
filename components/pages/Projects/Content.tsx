@@ -3,11 +3,13 @@ import styles from "../_styles/Projects.module.css"
 
 const { Title, Link, Paragraph } = Typography
 
-const description = "Movizzed is makeover of my first application that I had developed, always using the TMdb API, in Reactjs."
-
 interface ProjectCardProps {
     title: string;
     description: string;
+}
+
+interface ContentProps {
+    projects: Array<Object>;
 }
 
 function ProjectCard({ title, description }: ProjectCardProps) {
@@ -17,7 +19,7 @@ function ProjectCard({ title, description }: ProjectCardProps) {
     </div>
 }
 
-export default function Content() {
+export default function Content({ projects }: ContentProps) {
     return <Row className={styles["projects-section"]} >
         <Col span={9}>
             <Title className="serif" level={3}>Projects</Title>
@@ -26,9 +28,9 @@ export default function Content() {
             </Paragraph>
         </Col>
         <Col span={12}>
-            <ProjectCard title="Moviezzed" description={description} />
-            <ProjectCard title="Moviezzed" description={description} />
-            <ProjectCard title="Moviezzed" description={description} />
+            {
+                projects.map(project => <ProjectCard key={project.title + "-project-page"} title={project.title} description={project.description} />)
+            }
         </Col>
     </Row>
 }
