@@ -31,11 +31,8 @@ It's compiled to ./antd.css. Run the "yarn compile:less" command to compile it t
 // Typography
 @font-size-base: 1.5rem;
 @font-size-sm: 1rem;
-@heading-1-size: ceil(@font-size-base * 5);
-@heading-2-size: ceil(@font-size-base * 4);
-@heading-3-size: ceil(@font-size-base * 3);
-@heading-4-size: ceil(@font-size-base * 2.66);
-@heading-5-size: ceil(@font-size-base * 1.5);
+@heading-1-size: ceil(@font-size-base * 4);
+@heading-2-size: ceil(@font-size-base * 2);
 @font-family: 'Work Sans', sans-serif;
 
 // Layout
@@ -43,3 +40,15 @@ It's compiled to ./antd.css. Run the "yarn compile:less" command to compile it t
 @layout-header-background: @super-light;
 @layout-footer-background: @layout-body-background;
 @layout-sider-background: @layout-header-background;
+
+@media (max-width: 670px) {
+    h1 {
+        font-size: ceil(@font-size-base * 3) !important;
+    }
+}
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: ceil(@font-size-base * 2) !important;
+    }
+}

@@ -4,14 +4,19 @@ import styles from "../_styles/Contact.module.css"
 const { Title } = Typography
 const { TextArea } = Input
 
+const colBreakpoints = {
+    lg: 10,
+    sm: 24
+}
+
 export default function Content() {
     return <Row>
-        <Col span={10}>
+        <Col lg={colBreakpoints.lg} sm={colBreakpoints.sm} >
             <Title level={4} className="serif">
                 I’m open to ideas, feel free to contact me.
             </Title>
         </Col>
-        <Col span={10}>
+        <Col lg={colBreakpoints.lg} sm={colBreakpoints.sm} >
             <form>
                 <Input className={styles.input} placeholder="Name" required={true} type="text" />
                 <Input className={styles.input} placeholder="Email" required={true} type="email" />

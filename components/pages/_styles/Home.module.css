@@ -1,30 +1,15 @@
 .HOME-hero {
-    height: 100vh;
+    height: auto;
     flex-direction: column;
+    text-align: center;
 }
 
 .main-content {
-    padding-left: 10%;
-}
-
-.project-card {
-    margin: 8% 0;
+    padding-left: 5%;
 }
 
 .project-card img {
-    width: 40%;
+    width: 90%;
     height: auto;
-}
-
-.project-card-sub, .project-card-heading {
-    margin-left: 27%;
-    position: absolute;
-}
-
-.project-card-heading {
-    margin-top: -20%;
-}
-
-.project-card-sub {
-    margin-top: -14%;
+    margin: 20px 0;
 }

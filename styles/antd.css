@@ -16956,7 +16956,7 @@ textarea.ant-mentions {
   margin-bottom: 0;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 32px;
   overflow: hidden;
   white-space: nowrap;
@@ -23889,7 +23889,7 @@ h1.ant-typography,
   margin-bottom: 0.5em;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 1.23;
 }
 h2.ant-typography,
@@ -23897,7 +23897,7 @@ h2.ant-typography,
   margin-bottom: 0.5em;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 1.35;
 }
 h3.ant-typography,
@@ -23905,7 +23905,7 @@ h3.ant-typography,
   margin-bottom: 0.5em;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 1.35;
 }
 h4.ant-typography,
@@ -23913,7 +23913,7 @@ h4.ant-typography,
   margin-bottom: 0.5em;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.4;
 }
 h5.ant-typography,
@@ -23921,7 +23921,7 @@ h5.ant-typography,
   margin-bottom: 0.5em;
   color: #1F1F1F;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 .ant-typography + h1.ant-typography,
@@ -24824,4 +24824,14 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-upload-list-rtl.ant-upload-list-picture-card .ant-upload-list-item-file + .ant-upload-list-item-name {
   margin: 8px 0 0;
   padding: 0;
+}
+@media (max-width: 670px) {
+  h1 {
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 540px) {
+  h1 {
+    font-size: 3rem !important;
+  }
 }

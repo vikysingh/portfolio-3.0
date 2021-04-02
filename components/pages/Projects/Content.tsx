@@ -19,15 +19,26 @@ function ProjectCard({ title, description }: ProjectCardProps) {
     </div>
 }
 
+const firstColBreakpoints = {
+    lg: 9,
+    md: 9,
+    sm: 24,
+    xs: 24
+}
+
+const secondColBreakpoints = {...firstColBreakpoints, lg:12, md: 12}
+
 export default function Content({ projects }: ContentProps) {
     return <Row className={styles["projects-section"]} >
-        <Col span={9}>
+        <Col lg={firstColBreakpoints.lg} md={firstColBreakpoints.md}
+        sm={firstColBreakpoints.sm} xs={firstColBreakpoints.xs} >
             <Title className="serif" level={3}>Projects</Title>
             <Paragraph>
                 Some work I have done so far.
             </Paragraph>
         </Col>
-        <Col span={12}>
+        <Col  lg={secondColBreakpoints.lg} md={secondColBreakpoints.md}
+        sm={secondColBreakpoints.sm} xs={secondColBreakpoints.xs} >
             {
                 projects.map(project => <ProjectCard key={project.title + "-project-page"} title={project.title} description={project.description} />)
             }

@@ -8,12 +8,20 @@ interface HeroProps {
     description: Object;
 }
 
+const colBreakpoints = {
+    lg: 10,
+    md: 10,
+    sm: 24
+}
+
 export default function Hero({ imgSrc, description }: HeroProps) {
     return <Row className={styles.hero} >
-                <Col span={10}>
+                <Col lg={colBreakpoints.lg} md={colBreakpoints.md}
+                    sm={colBreakpoints.sm} >
                     <img src={imgSrc} alt="Profile photo" />
                 </Col>
-                <Col offset={1} span={10}>
+                <Col offset={1} lg={colBreakpoints.lg} md={colBreakpoints.md}
+                    sm={colBreakpoints.sm} >
                     <Title level={5}>About me</Title>
                     <Paragraph>
                         {description.first}
