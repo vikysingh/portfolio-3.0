@@ -5,7 +5,11 @@ const { Title, Paragraph } = Typography
 
 interface HeroProps {
     imgSrc: string;
-    description: Object;
+    description: {
+        first: string;
+        second: string;
+        third: string;
+    };
 }
 
 const colBreakpoints = {

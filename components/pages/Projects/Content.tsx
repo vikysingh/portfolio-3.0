@@ -9,7 +9,7 @@ interface ProjectCardProps {
 }
 
 interface ContentProps {
-    projects: Array<Object>;
+    projects: ProjectCardProps[];
 }
 
 function ProjectCard({ title, description }: ProjectCardProps) {
@@ -40,7 +40,8 @@ export default function Content({ projects }: ContentProps) {
         <Col  lg={secondColBreakpoints.lg} md={secondColBreakpoints.md}
         sm={secondColBreakpoints.sm} xs={secondColBreakpoints.xs} >
             {
-                projects.map(project => <ProjectCard key={project.title + "-project-page"} title={project.title} description={project.description} />)
+                projects.map(project => <ProjectCard key={project.title + "-project-page"}
+                title={project.title} description={project.description} />)
             }
         </Col>
     </Row>
