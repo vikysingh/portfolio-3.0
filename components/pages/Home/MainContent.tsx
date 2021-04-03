@@ -13,9 +13,9 @@ interface MainContentProps {
     projects: ProjectCardProps[];
 }
 
-function ProjectCard({ imgSrc, link, title }: ProjectCardProps) {
+function ProjectCard({ imgSrc, link }: ProjectCardProps) {
     return <Link className={styles["project-card"]} href={link} >
-        <img src={imgSrc} alt={title} />
+        <img src={imgSrc} />
     </Link>
 }
 

@@ -2,19 +2,19 @@
     {
         "title": "Moviezzed",
         "description": "Movizzed is makeover of my first application that I had developed, always using the TMdb API, in Reactjs.",
-        "link": "#",
-        "imgSrc": ""
+        "link": "https://github.com/vikysingh/new-movie-app",
+        "imgSrc": "https://i.ibb.co/PZ9mvBs/movizzed2.png"
     },
     {
         "title": "CosmeticCommerce",
         "description": "Among many reasons I mainly chose an online store as a project to develop due its complexity.",
-        "link": "#",
-        "imgSrc": ""
+        "link": "https://github.com/vikysingh/cosmetic-ecommerce",
+        "imgSrc": "https://i.ibb.co/SxczXRM/cosmetic2.png"
     },
     {
         "title": "TaskiaTool",
         "description": "This project was built to gain a deeper understanding of NextJS, when I first started learning the framework.",
-        "link": "#",
-        "imgSrc": ""
+        "link": "https://github.com/vikysingh/creative-landing-page",
+        "imgSrc": "https://i.ibb.co/NYWnVT2/taskia2.png"
     }
 ]

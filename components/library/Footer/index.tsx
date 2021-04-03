@@ -1,12 +1,14 @@
 import styles from "./style.module.css"
 import {Typography} from "antd"
 
+import AboutData from "../../../content/about.json"
+
 const { Link } = Typography
 
 export default function Footer() {
     return <footer className={styles.footer} >
-        <Link href="https://www.linkedin.com/in/singhviky/">LinkedIn</Link>
-        <Link href="https://www.github.com/vikysingh">GitHub</Link>
-        <Link href="https://www.instagram.com/web.sia">Instagram</Link>
+        <Link href={AboutData.about.links.linkedin}>LinkedIn</Link>
+        <Link href={AboutData.about.links.github}>GitHub</Link>
+        <Link href={AboutData.about.links.instagram}>Instagram</Link>
     </footer>
 }

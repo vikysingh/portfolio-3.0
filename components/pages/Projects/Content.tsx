@@ -6,15 +6,16 @@ const { Title, Link, Paragraph } = Typography
 interface ProjectCardProps {
     title: string;
     description: string;
+    link: string;
 }
 
 interface ContentProps {
     projects: ProjectCardProps[];
 }
 
-function ProjectCard({ title, description }: ProjectCardProps) {
+function ProjectCard({ title, description, link }: ProjectCardProps) {
     return <div className={styles["projects-card"]}>
-        <Link href="#"> {title} </Link>
+        <Link href={link}> {title} </Link>
         <Paragraph> {description} </Paragraph>
     </div>
 }
@@ -41,7 +42,7 @@ export default function Content({ projects }: ContentProps) {
         sm={secondColBreakpoints.sm} xs={secondColBreakpoints.xs} >
             {
                 projects.map(project => <ProjectCard key={project.title + "-project-page"}
-                title={project.title} description={project.description} />)
+                title={project.title} description={project.description} link={project.link} />)
             }
         </Col>
     </Row>

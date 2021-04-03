@@ -16,7 +16,7 @@ export default function Content() {
                 I’m open to ideas, feel free to contact me.
             </Title>
         </Col>
-        <Col lg={colBreakpoints.lg} sm={colBreakpoints.sm} >
+        <Col lg={colBreakpoints.lg} offset={1} sm={colBreakpoints.sm} >
             <form>
                 <Input className={styles.input} placeholder="Name" required={true} type="text" />
                 <Input className={styles.input} placeholder="Email" required={true} type="email" />
