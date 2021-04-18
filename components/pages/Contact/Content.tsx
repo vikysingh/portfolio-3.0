@@ -1,4 +1,4 @@
-import { Row, Col, Typography, Input, Button } from "antd"
+import { Row, Col, Typography, Input, Button, Form } from "antd"
 import styles from "../_styles/Contact.module.css"
 
 const { Title } = Typography
@@ -9,6 +9,8 @@ const colBreakpoints = {
     sm: 24
 }
 
+const { Item } = Form
+
 export default function Content() {
     return <Row>
         <Col lg={colBreakpoints.lg} sm={colBreakpoints.sm} >
@@ -17,12 +19,23 @@ export default function Content() {
             </Title>
         </Col>
         <Col lg={colBreakpoints.lg} offset={1} sm={colBreakpoints.sm} >
-            <form>
-                <Input className={styles.input} placeholder="Name" required={true} type="text" />
-                <Input className={styles.input} placeholder="Email" required={true} type="email" />
-                <TextArea className={styles.textarea} rows={4} required={true} placeholder="Message" />
-                <Button className={styles["submit-btn"]}>Submit</Button>
-            </form>
+            <Form name="primary-contact-form">
+                <Item>
+                    <Input className={styles.input} name="name"
+                           placeholder="Name" required={true} type="text" />
+                </Item>
+                <Item>
+                    <Input className={styles.input} name="email"
+                           placeholder="Email" required={true} type="email" />
+                </Item>
+                <Item>
+                    <TextArea className={styles.textarea} name="message"
+                              rows={4} required={true} placeholder="Message" />
+                </Item>
+                <Item>
+                    <Button className={styles["submit-btn"]} htmlType="submit">Submit</Button>
+                </Item>
+            </Form>
         </Col>
     </Row>
 }
